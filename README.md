@@ -19,10 +19,10 @@ Now once the agent setup is complete , next I focused on creating the backend us
 It has the following features:
 1) Defines the allowed origins to access the backend.
 2) Contains the SSE ( Server Sent Events)- One way HTTP method sent from backend to frontend used for live updates from backend accordingly used in frontend for live completion of steps.
-3) Contanis the agent pipeline- Imports the agent we created before and then creates a runner and a session to execute the pipeline and for each step in the pipeline gives out a message to the frontend.
+3) Contains the agent pipeline- Imports the agent we created before and then creates a runner and a session to execute the pipeline and for each step in the pipeline gives out a message to the frontend.
 4) Contains 2 endpoints - 1) /api/stream - the main endpoint where backend communicates the pipeline results to frontend 2) /api/health- general endpoint for health check purposes used to verify if the server is running.
 
-Now Dockerfile is created to build the image and run the backend on port 8080.
+Now Dockerfile is created to build the image and run the container on port 8080.
 
 Coming to the frontend which has the following:
 Screens:
